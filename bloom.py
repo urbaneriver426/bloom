@@ -1,8 +1,9 @@
+from BitVector import BitVector
 class BloomFilter:
 
 	def __init__(self, f_len):
 		self.filter_len = f_len
-		self.bf = bytearray(f_len) 
+		self.bf = BitVector(size = f_len) 
 		# создаём битовый массив длиной f_len ...
 
 	def hash1(self, str1):
